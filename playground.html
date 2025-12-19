@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="BTP-Magna">
+        <!-- Adding Responsive meta tag for boostrap-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Adding bootstrap framework-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <title>BTP-Magna Webpage</title>
+    </head>
+
+    <body class="">
+        <!--Logo web title nav bar-->
+        <header>
+            <!-- Use body padding top to have enough space for the fixed nav bar -->
+            <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-md py-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">ȺłȉƈɆ</a>
+                    <!--data-bs-toggle type of action dropdown/collapse-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Aria Current page on the activate nav-link-->
+                    <!-- Seem like ARIA prefer ul than only anchor -->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/project.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Playground</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="playgroundHero" class="containerpy-4">
+                <div class="row">
+                    <div class="col text-center p-4">
+                        <h1>Playground</h1>
+                        <p>Trying out various frontend and framework component</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Boot Strap Component-->
+            <section id="bootstrap-typography" class="container mb-4 py-4">
+                <div class="row">
+                    <div class="col text-center pb-4">
+                        <h2>Bootstrap5 - Typography</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col border text-center">
+                        <h3>Typography </h3>
+                        <pre><code class="language-html">
+&lt;h1 class="display-1"&gt;Display 1&lt;/h1&gt;
+&lt;h2 class="display-2"&gt;Display 2&lt;/h2&gt;
+&lt;h3 class="display-3"&gt;Display 3&lt;/h3&gt;
+&lt;h4 class="display-4"&gt;Display 4&lt;/h4&gt;
+&lt;h5 class="display-5"&gt;Display 5&lt;/h5&gt;
+&lt;h6 class="display-6"&gt;Display 6&lt;/h6&gt;
+					</code></pre>
+                    </div>
+                    <div class="col border">
+                        <h1 class="disaply-1">Display 1</h1>
+                        <h2 class="disaply-2">Display 2</h2>
+                        <h3 class="disaply-3">Display 3</h3>
+                        <h4 class="disaply-4">Display 4</h4>
+                        <h5 class="disaply-5">Display 5</h5>
+                        <h6 class="disaply-6">Display 6</h6>
+                    </div>
+                </div>
+            </section>
+            <!--Carousel-->
+            <section id="projectContent" class="container my-4">
+                <div id="carouselProject" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-4 p-4">
+                                    <div class="card h-100 p-3">
+                                        <div class="card-frame d-flex flex-column">
+                                            <img alt="temp" src="https://i.postimg.cc/6qjSV4vh/rush0.gif" class="card-img-top ratio-16x9" width="400" height="200">
+                                            <div class="card-body d-flex flex-column text-center">
+                                                <h3 class="card-title">Web Rush</h3>
+                                                <p class="card-subtitle">24-Hour Capstone</p>
+                                                <p class="d-none d-md-block card-text">A simple, responsive webpage created after six days going from zero to building first real website.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-none d-sm-block col-12 col-md-8 p-5 text-center text-md-end">
+                                    <h1><strong>Innovate boldly</strong>. Build freely. <em>Iterate endlessly.</em></h1>
+                                    <p class="mt-3">Exploring ideas, breaking limits,<br> one iteration at a time. </p>
+                                    <a class="btn btn-primary mt-auto align-self-center" href="/projects/42-web/index.html" role="button">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProject" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <!-- Other -->
+
+
+            <!--Skill Tables-->
+            <!--Will turn tools Languages into chip element later-->
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Tools / Language</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Core Language</td>
+                    <td>C, C#, Java, Python</td>
+                    <td>Strong problem-solving and algorithmic foundation</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>HTML, CSS, JavaScript, Botstrap</td>
+                    <td>Focus on responsive and accessible UI</td>
+                </tr>
+                <tr>
+                    <td>Database</td>
+                    <td>SQLite</td>
+                    <td>Lightweight data handling for small projects</td>
+                </tr>
+                <tr>
+                    <td>Tools</td>
+                    <td>Git, Figma</td>
+                    <td>Daily-use tools for versioning and design</td>
+                </tr>
+                <tr>
+                    <td>Hardware</td>
+                    <td>Electronics</td>
+                    <td>Build and repairs embedded project and circuit</td>
+                </tr>
+            </table>
+            <hr>
+            <!--Iframe testing seem like the server block the connection?-->
+            <div>
+                <iframe src="https://duckduckgo.com/" name="frame_a" title="CS50 Site"></iframe>
+                <p><a href="https://cs50.harvard.edu/x/weeks/0/" target="frame_a">Week 0</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/1/" target="frame_a">Week 1</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/2/" target="frame_a">Week 2</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/3/" target="frame_a">Week 3</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/4/" target="frame_a">Week 4</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/5/" target="frame_a">Week 5</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/6/" target="frame_a">Week 6</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/7/" target="frame_a">Week 7</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/8/" target="frame_a">Week 8</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/9/" target="frame_a">Week 9</a></p>
+                <p><a href="https://cs50.harvard.edu/x/weeks/10/" target="frame_a">Week 10</a></p>
+            </div>
+            <form target="_self">
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="contactname">Name:</label>
+                    <input type="text" id="contactname" name="name" placeholder="Name">
+                    <label for="contactemail">Email:</label>
+                    <input type="text" id="contactemail" name="email" placeholder="email@sample.com">
+                    <label for="contactfavorite">Favorite Language:</label>
+                    <select id="contactfavorite" name="favorite">
+                        <option value="scratch">Scratch</option>
+                        <option value="c">C</option>
+                        <option value="python">Python</option>
+                        <option value="sqlite">SQLite</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                    <label for="contactmessage">Message:</label>
+                    <textarea id="contactmessage" name="message">Sample Message</textarea>
+                    </fieldset>
+					<input type="submit" value="confirm">
+                    <input type="reset" value="redo">
+                </form>
+				</main>
+                <footer class="container-fluid bg-primary text-light text-center py-2 ">
+                    <p class="mb-0">© 2025 BTP-Magna™. All rights reserved.</p>
+                </footer>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            </body>
+
+        </html>

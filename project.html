@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="BTP-Magna">
+        <!-- Adding Responsive meta tag for boostrap-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Adding bootstrap framework-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <title>BTP-Magna Webpage</title>
+    </head>
+
+    <body class="">
+        <!--Logo web title nav bar-->
+        <header>
+            <!-- Use body padding top to have enough space for the fixed nav bar -->
+            <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-md py-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">ȺłłłȉƈɆ</a>
+                    <!--data-bs-toggle type of action dropdown/collapse-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Aria Current page on the activate nav-link-->
+                    <!-- Seem like ARIA prefer ul than only anchor -->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/project.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Playground</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Project Hero -->
+            <section id="projectHero" class="container my-4">
+                <div class="row align-items-center">
+                    <div class="col-12 text-center">
+                        <h1>> <strong>Projects</strong><span class="blinking-text">_</span></h1>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Content -->
+
+                    <section id="project" class="container mb-4 py-4">
+                        <!--Card-->
+                        <div class="row justify-content-evenly g-4">
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="card h-100 p-3">
+                                    <div class="card-frame d-flex flex-column">
+                                        <img alt="temp" src="https://picsum.photos/seed/p1/800/450" class="card-img-top ratio-16x9" width="400" height="200">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <h3 class="card-title">On Hold</h3>
+                                            <p class="card-subtitle">Hiatus</p>
+                                            <p class="d-none d-md-block card-text">Will Add more card when I have more project to showcase</p>
+                                            <a class="btn btn-primary mt-auto align-self-center" href="project.html" role="button">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="card h-100 p-3">
+                                    <div class="card-frame d-flex flex-column">
+                                        <img alt="temp" src="https://i.postimg.cc/9MrqFrhP/b2broot.webp" class="card-img-top ratio-16x9" width="400" height="200">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <h3 class="card-title">Born2BeRoot</h3>
+                                            <p class="card-subtitle">Debian System Setup</p>
+                                            <p class="d-none d-md-block card-text">Complete server-building from bare system to a secure Debian setup with Fail2ban, Netdata, and WordPress service.</p>
+                                            <a class="btn btn-primary mt-auto align-self-center" href="project.html" role="button">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="card h-100 p-3">
+                                    <div class="card-frame d-flex flex-column">
+                                        <img alt="temp" src="https://i.postimg.cc/6qjSV4vh/rush0.gif" class="card-img-top ratio-16x9" width="400" height="200">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <h3 class="card-title">Web Rush</h3>
+                                            <p class="card-subtitle">24-Hour Capstone</p>
+                                            <p class="d-none d-md-block card-text">A simple, responsive webpage created after six days going from zero to building first real website.</p>
+                                            <a class="btn btn-primary mt-auto align-self-center" href="projects/42-web/index.html" role="button">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <footer class="container-fluid bg-primary text-light text-center py-2 ">
+                    <p class="mb-0">© 2025 BTP-Magna™, All rights reserved.</p>
+                </footer>
+        <!--Adding Bootstrap Javascript CDN -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            </body>
+
+        </html>

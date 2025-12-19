@@ -1,0 +1,167 @@
+:root {
+    --primary-500: #14b8a6;
+    --primary-600: #0d9488;
+    --accent-400: #a78bfa;
+    --gray-900: #111827;
+    --gray-700: #374151;
+    --gray-500: #6b7280;
+    --gray-300: #d1d5db;
+    --gray-200: #e5e7eb;
+    --gray-100: #f3f4f6;
+    --white: #ffffff;
+}
+
+/* Debug */
+.debug-grid .container,
+.debug-grid .container-fluid {
+    outline: 2px dashed rgba(0, 128, 255, 0.7);
+    background-color: rgba(0, 128, 255, 0.05);
+}
+
+.debug-grid .row {
+    outline: 1px solid rgba(255, 0, 0, 0.6);
+    background-color: rgba(255, 0, 0, 0.04);
+}
+
+.debug-grid [class^="col"] {
+    outline: 1px dotted rgba(0, 200, 0, 0.8);
+    background-color: rgba(0, 200, 0, 0.05);
+}
+
+.debug-grid * {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--white);
+    color: var(--gray-900);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding-top: 4.5rem;
+}
+
+/* Header */
+.navbar-brand {
+    padding: 0rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        margin: 0 1.5rem
+    }
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Card */
+.card {
+    box-shadow: 0 4px 16px var(--gray-700);
+    transition: box-shadow 0.25s ease;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px var(--primary-500);
+}
+
+.card-frame {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+    border-radius: 0.75rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-bottom: 0.75rem;
+}
+
+/* Table */
+.table th {
+    background-color: var(--primary-500);
+    color: var(--white);
+    /* text color */
+    border-color: var(--white);
+    font-size: 1.25rem;
+}
+
+.table th,
+.table td {
+    padding: 1rem 0.75rem;
+    vertical-align: middle;
+}
+
+/* Badge Chip Overide */
+.badge {
+    background-color: var(--primary-500) !important;
+    border-color: var(--primary-500) !important;
+}
+
+.badge:hover {
+    background-color: var(--primary-600) !important;
+    border-color: var(--accent-400) !important;
+}
+
+/* Text Stylize */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking-text {
+    animation: blink 2s infinite;
+}
+
+/* Progress bar animated Overide */
+.progress-bar-animated {
+    background-color: var(--primary-500) !important;
+}
+
+/* Button override */
+.bg-primary {
+    background-color: var(--primary-500) !important;
+    border-color: var(--primary-500) !important;
+}
+
+.bg-secondary {
+    background-color: var(--accent-400) !important;
+    border-color: var(--accent-400) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-500) !important;
+    border-color: var(--primary-500) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-600) !important;
+    border-color: var(--accent-400) !important;
+}
